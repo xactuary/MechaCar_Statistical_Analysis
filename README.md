@@ -7,3 +7,17 @@ Statistical analysis 1 - multiple regression analysis to determine which input v
 ## Analysis
 Using the "dplyr" library, a multiple regression model was run using the lm function with all 6 variables in the database.  The goal is to predict the mpg from the other variables so the R statement is lm(mpg~vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCar_DF) where MechCar is the dataframe including the data read in from the csv file.   The results from this statement are:  
 ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lmOutput1.PNG)
+
+This implies the following equation:  
+Assigning the variable names  
+1.  vl = vehicle_length
+2.  vw = vehicle_weight
+3.  s = spoiler angle
+4.  gc = ground clearance
+5.  AWD = AWD
+
+Then mpg = 6.237 vl + .001245 vw + 687.7 s + 3.546 gc -3.411 AWD - 104
+
+
+  
+  
