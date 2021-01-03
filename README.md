@@ -18,6 +18,10 @@ Assigning the variable names
 
 Then mpg = 6.237 vl + .001245 vw + 687.7 s + 3.546 gc -3.411 AWD - 104
 
+The summary Statistics on this model are as follows:  
+
+![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lmSummaryOutput1.PNG)
+
 
   
   
