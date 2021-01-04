@@ -69,7 +69,7 @@ For the total, the PSI variance of 62.29 is less than the control maximum of 100
 Looking at separate lots, we can see that Lot 3 has a variance that is higher than the design specifications at 170.29 versus the maximum allowed of 100. Based on this observation we would reject the manufacturing lot 3 as not meeting the design standards needed.
 
 ## T test analysis
-  The one sample T test is used to determine whether there is a statistical difference between the means of sample datasets versus a hypothesized full population dataset.  We want to determine if the lot means are statistically different from the population mean of 1500.  Our null hypothesis says there is no statistical difference - the samples are representative of the population.  The alternate hypothesis is that there is a statistical difference between the observed sample mean and the whole population.  In order to see if Lot 3 really is different than the population, we can use the T test.  
+  The one sample T test is used to determine whether there is a statistical difference between the means of sample datasets versus a hypothesized full population dataset.  We want to determine if the lot means are statistically different from the population mean of 1500.  Our null hypothesis says there is no statistical difference between the sample mean and the population mean - the samples are representative of the population.  The alternate hypothesis is that there is a statistical difference between the observed sample mean and the whole population.  In order to see if Lot 3 really is different than the population, we can use the T test.  
   
   Before applying the t-test, we need to check our sample for the following requirements:
   1.  The input data must be numerical and continuous.  This is true because the PSI is numeric and continuous
@@ -90,7 +90,7 @@ The graphs show basically the same shape and look normally distributed.  The t t
  
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/samplettest.PNG)
  
-  The p value resulting from the t test is .5741 which is above our 5%.  This means that the sample did not occur by chance and the means are similar.   The t value is .5658 which isn't very big which implies there isn't a significant difference between the sample mean and the population mean.  
+  The p value resulting from the t test is .5741 which is above our 5%.  This means that the sample did not occur by chance and the means are similar.   The t value is .5658 which isn't very big which implies there isn't a significant difference between the sample mean and the population mean.  Therefore there is not evidence to reject the null hypotheses that there is no statistical difference between the mean of the sample and population.  
   
 It is also important to run the t test on a the 3 different manufacturing lots because we noted earlier that lot 3 did not pass the design specifications.  
     
