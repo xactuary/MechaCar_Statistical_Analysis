@@ -117,7 +117,9 @@ The p values on Lots 1 and 2 are both significantly below our 5% threshold.   A 
 
 These t tests are run against the mean on the whole population which is 1498.78.  So the lot1 and lot2 tests against this value reject the null hypothesis.  This is because the true mean is actually 1500.  So we can run the t test against 1500 as well.  
 
-
+## Study Design: MechaCar vs Competition
+ 
+Based on the Global Consumer Survey of 2018, the top two factors that drive car purchase for consumers are safety and fuel efficiency.  Other factors that buyers would consider is price, handling, maintenance costs and type of vehicle.  
 
   
   
