@@ -83,7 +83,7 @@ Looking at separate lots, we can see that Lot 3 has a variance that is higher th
 ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/PSISuscoilTable.png)
   
   Taking a sample of 50 observations from the dataset results in this density function:
- ![]() 
+ ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/samplesuscoil.png) 
     
  The graphs show basically the same shape and look normally distributed.  The t test is now run on the sample versus the whole population with the following results:
  
