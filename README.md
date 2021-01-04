@@ -68,7 +68,30 @@ For the total, the PSI variance of 62.29 is less than the control maximum of 100
 
 Looking at separate lots, we can see that Lot 3 has a variance that is higher than the design specifications at 170.29 versus the maximum allowed of 100. Based on this observation we would reject the manufacturing lot 3 as not meeting the design standards needed.
 
-
+## T test analysis
+  The one sample T test is used to determine whether there is a statistical difference between the means of sample datasets versus a hypothesized full population dataset.  We want to determine if the lot means are statistically different from the population mean of 1500.  Our null hypothesis says there is no statistical difference - the samples are representative of the population.  The alternate hypothesis is that there is a statistical difference between the observed sample mean and the whole population.  In order to see if Lot 3 really is different than the population, we can use the T test.  
+  
+  Before applying the t-test, we need to check our sample for the following requirements:
+  1.  The input data must be numerical and continuous.  This is true because the PSI is numeric and continuous
+  2.  The sample data was selected randomly from its population data.  We can assume this is true.
+  3.  The input data is considered to be normally distributed - there is no reason to assume it is not.
+  4.  The sample size is reasonably large.  We don't know yet if it is large enough but there are a reasonably large number of observations.
+  5.  The variance of the input data should be very similar.  This is hard to know.
+    
+    The first run of the t-test is to do a sample of the total population versus the whole population of the suspension_coil dataset.  (note we are not dividing into manufacturing lots yet).  Plotting the distribution of PSI readings for the whole set results in the following density function:
+      
+![]()
+  
+  Taking a sample of 50 observations from the dataset results in this density function:
+  
+    
+ The graphs show basically the same shape and look normally distributed.  The t test is now run on the sample versus the whole population with the following results:
+ 
+ ![]()
+ 
+    
+    
+  
 
 
   
