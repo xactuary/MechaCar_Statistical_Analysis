@@ -103,7 +103,11 @@ It is also important to run the t test on a the 3 different manufacturing lots b
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3plot.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3ttest.PNG)
  
- 
+The p values on Lots 1 and 2 are both significantly below our 5% threshold.   A smaller p-value means that there is stronger evidence in favor of the alternative hypothesis. 
+
+These t tests are run against the mean on the whole population which is 1498.78.  So the lot1 and lot2 tests against this value reject the null hypothesis.  This is because the true mean is actually 1500.  So we can run the t test against 1500 as well.  
+
+
 
   
   
