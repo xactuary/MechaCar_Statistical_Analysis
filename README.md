@@ -22,7 +22,7 @@ The summary Statistics on this model are as follows:
 
 ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lmSummaryOutput1.PNG)
 
-In the summary output, each Pr(>|t|) value represents the probability that each coefficient contributes a random amount of variance to the linear model. So the smaller this amount, the more likely that the varialbe IS contributing to the mpg whereas the larger numbers suggest that the variance it contributes is random.  So the large PR(>|t|) amounts from this analysis are being generated from vehicle_weight, spoiler_angle, and AWD.  The variables with very small values incuding the intercept, vehicle_length, and ground_clearance would provide predictive value to the mpg. 
+In the summary output, each Pr(>|t|) value represents the probability that each coefficient contributes a random amount of variance to the linear model. So the smaller this amount, the more likely that the variable IS contributing to the mpg whereas the larger numbers suggest that the variance is random rather than predictive.  So the large PR(>|t|) amounts from this analysis are being generated from vehicle_weight, spoiler_angle, and AWD.  The variables with very small values including the intercept, are the vehicle_length and ground_clearance.   
 
 
   The R2 value for this model is reasonably high explaining 71.49% of the variation.  My question, however, is that the variables that seem to be significant are not the ones I would have expected for predicting mileage per gallon.  So I ran a single linear regression separately on each value to see what the R2 is for single regression model.
@@ -33,7 +33,10 @@ Variable 3 - spoiler angle  R2  = .0004343, p-value =.8858
 Variable 4 - ground clearance R2 = .1081, p-value = .01975
 Variable 5 - AWD R2 = .03007, p-value = .3264
 
-So this is consistent with the multiple regression.  For some strange reason, the only correlation to mpg is from the vehicle length and ground clearance.  But the biggest R2 on the individual outcomes only explains 37.15% of the mpg whereas the multiple regression explains 70%.  There is a chance that this example may have the problem of over-modeling.  
+So this is consistent with the multiple regression.  For some strange reason, the only correlation to mpg is from the vehicle length and ground clearance.  But the biggest R2 on the individual outcomes only explains 37.15% of the mpg whereas the multiple regression explains 70%.  There is a chance that this example may have the problem of over-modeling.
+  
+## Summary Statistics on Suspension
+
   
 ![]( https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/totalsummary.PNG )
     
