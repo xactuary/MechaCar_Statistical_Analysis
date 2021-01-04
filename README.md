@@ -98,7 +98,9 @@ It is also important to run the t test on a the 3 different manufacturing lots b
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1ttest.PNG)
  
  For Lot 1, the p = 1 if compated to mean =1500.  This means the model mean=1500 perfectly describes the data.  
+ ![]( https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot11500.PNG)
  
+   
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot2plot.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot2ttest.PNG)
  
