@@ -100,7 +100,7 @@ It is also important to run the t test on a the 3 different manufacturing lots b
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot2plot.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot2ttest.PNG)
  
- ![]()
+ ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3plot.png)
  ![]()
  
  
