@@ -33,7 +33,12 @@ Variable 3 - spoiler angle  R2  = .0004343, p-value =.8858
 Variable 4 - ground clearance R2 = .1081, p-value = .01975
 Variable 5 - AWD R2 = .03007, p-value = .3264
 
-So this is consistent with the multiple regression.  For some strange reason, the only correlation to mpg is from the vehicle length and ground clearance.  But the biggest R2 on the individual outcomes only explains 37.15% of the mpg whereas the multiple regression explains 70%.  There is a chance that this example may have the problem of over-modeling.
+So this is consistent with the multiple regression.  For some strange reason, the only correlation to mpg is from the vehicle length and ground clearance.  We can see from the following graph, that there is a positive slope and correlation between vehicle length and mpg.  As the prototype vehicle gets longer, the mpg gets bigger.
+  
+![](  https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/vehlength.PNG)
+
+
+But the biggest R2 on the individual outcomes only explains 37.15% of the mpg whereas the multiple regression explains 70%.  There is a chance that this example may have the problem of over-modeling.
   
 ## Summary Statistics on Suspension
 
