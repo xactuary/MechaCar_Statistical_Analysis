@@ -32,13 +32,13 @@ In the summary output, each Pr(>|t|) value represents the probability that each 
 
 
   The R2 value for this model is reasonably high explaining 71.49% of the variation.  My question, however, is that the variables that seem to be significant are not the ones I would have expected for predicting mileage per gallon.  So I ran a single linear regression separately on each value to see what the R2 is for single regression model.
+    
+* Variable 1 - vehicle_length  - R2 =37.15,  p-value = 2.632e-06
+* Variable 2 - vehicle weight - R2 = .008223,  p-alue = .5311
+* Variable 3 - spoiler angle  R2  = .0004343, p-value =.8858
+* Variable 4 - ground clearance R2 = .1081, p-value = .01975
+* Variable 5 - AWD R2 = .03007, p-value = .3264
   
-Variable 1 - vehicle_length  - R2 =37.15,  p-value = 2.632e-06
-Variable 2 - vehicle weight - R2 = .008223,  p-alue = .5311
-Variable 3 - spoiler angle  R2  = .0004343, p-value =.8858
-Variable 4 - ground clearance R2 = .1081, p-value = .01975
-Variable 5 - AWD R2 = .03007, p-value = .3264
-
 So this is consistent with the multiple regression.  For some strange reason, the only correlation to mpg is from the vehicle length and ground clearance.  We can see from the following graph, that there is a positive slope and correlation between vehicle length and mpg.  As the prototype vehicle gets longer, the mpg gets bigger.
   
 ![](  https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/vehlength.PNG)
