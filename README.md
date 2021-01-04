@@ -53,11 +53,17 @@ But the biggest R2 on the individual outcomes only explains 37.15% of the mpg wh
    
  
   
-![]( https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/totalsummary.PNG )
+![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/totalsummary.PNG )
   
-For the total, the PSI variance is less than the control maximum of 100 so as a whole, this data suggests that the manufacturing meets the design specifications.  To further investigate, we look at the statistics divided into manufacturing lots as displayed in the following table:  
+For the total, the PSI variance of 62.29 is less than the control maximum of 100. So, as a whole, this data suggests that the manufacturing meets the design specifications.  To further investigate, we look at the statistics divided into manufacturing lots as displayed in the following table:  
 
     
 ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lotsummary.PNG )
+
+Looking at separate lots, we can see that Lot 3 has a variance that is higher than the design specifications at 170.29 versus the maximum allowed of 100. Based on this observation we would reject the manufacturing lot 3 as not meeting the design standards needed.
+
+
+
+
   
   
