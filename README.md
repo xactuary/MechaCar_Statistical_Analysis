@@ -94,8 +94,16 @@ The graphs show basically the same shape and look normally distributed.  The t t
   
 It is also important to run the t test on a the 3 different manufacturing lots because we noted earlier that lot 3 did not pass the design specifications.  
     
-  
-
+ ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1graph.png)
+ ![]()
+ 
+ ![]()
+ ![]()
+ 
+ ![]()
+ ![]()
+ 
+ 
 
   
   
