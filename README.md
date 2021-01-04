@@ -42,8 +42,21 @@ But the biggest R2 on the individual outcomes only explains 37.15% of the mpg wh
   
 ## Summary Statistics on Suspension
 
+### Background
+  
+ A data file has been provided that gives PSI data on multiple manufacturing lots of weight capacities of multiple suspension coils.  The goal is to see if the manufacturing process is consistent across all production lots.  The design specifications for the MechaCar suspension coils requires that the variance of the suspension coils must not exceed 100 PSI.  
+ 
+ ### Analysis
+ 
+   
+ The statistics for the overall manufacturing lots is illustrated in the following table:
+   
+ 
   
 ![]( https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/totalsummary.PNG )
+  
+For the total, the PSI variance is less than the control maximum of 100 so as a whole, this data suggests that the manufacturing meets the design specifications.  To further investigate, we look at the statistics divided into manufacturing lots as displayed in the following table:  
+
     
 ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lotsummary.PNG )
   
