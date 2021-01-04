@@ -90,7 +90,9 @@ The graphs show basically the same shape and look normally distributed.  The t t
  
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/samplettest.PNG)
  
-    
+  The p value resulting from the t test is .5741 which is above our 5%.  This means that the sample did not occur by chance and the means are similar.   The t value is .5658 which isn't very big which implies there isn't a significant difference between the sample mean and the population mean.  
+  
+It is also important to run the t test on a the 3 different manufacturing lots because we noted earlier that lot 3 did not pass the design specifications.  
     
   
 
