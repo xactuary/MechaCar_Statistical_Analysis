@@ -80,10 +80,10 @@ Looking at separate lots, we can see that Lot 3 has a variance that is higher th
     
     The first run of the t-test is to do a sample of the total population versus the whole population of the suspension_coil dataset.  (note we are not dividing into manufacturing lots yet).  Plotting the distribution of PSI readings for the whole set results in the following density function:
       
-![]()
+![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/PSISuscoilTable.png)
   
   Taking a sample of 50 observations from the dataset results in this density function:
-  
+ ![]() 
     
  The graphs show basically the same shape and look normally distributed.  The t test is now run on the sample versus the whole population with the following results:
  
