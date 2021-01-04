@@ -97,13 +97,19 @@ It is also important to run the t test on a the 3 different manufacturing lots b
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1graph.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1ttest.PNG)
  
- For Lot 1, the p = 1 if compated to mean =1500.  This means the model mean=1500 perfectly describes the data.  
+ For Lot 1, if run the t-test against a population mean of 1500, the p = 1.  This means the model with mean=1500 perfectly describes the data.  
  ![]( https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot11500.PNG)
  
    
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot2plot.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot2ttest.PNG)
  
+ For Lot 2, if we run the t-test against a population mean of 1500, the p = .6072.  This means we would accept the null hypothesis that the mean of Lot 2 is the same as 1500.  Interestingly, the mean is very close to this amount so on a practical basis, this statistical test isn't very helpful.  
+ 
+  ![]https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot1500.PNG)
+ 
+ 
+ For Lot 3, if we run the t-test against a population mean of 1500, the p = .04168.  This is less than our standard of .05 so statiscally we would reject the null hypothesis
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3plot.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3ttest.PNG)
  
