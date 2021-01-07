@@ -94,7 +94,9 @@ The graphs show basically the same shape and look normally distributed.  The t t
   
 We can also run the sample versus the assumed population mean of 1500 (from challenge) which results in the following t test results:
 
-![]()
+![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/sampvs1500ttest.PNG)
+
+The p value of .1516 is greater than .05 so we accept the null hypothesis that the sample mean is similar to the 1500 assumed total population mean. 
   
 Because the company wants to make sure that manufacturing quality is consistent across lots, it is also important to run the t test on a the 3 different manufacturing lots because we noted earlier that lot 3 did not pass the design specifications.  
     
