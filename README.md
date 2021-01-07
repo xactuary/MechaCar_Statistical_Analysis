@@ -105,14 +105,14 @@ Because the company wants to make sure that manufacturing quality is consistent 
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1graph.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1ttest.PNG)
  
-The lot 1 t-test against the population calculated mean which is 1498.98 results in a very small p value which is less than .05 which means we would reject the null hypothesis that the Lot 1 sample mean is equal to the population mean.  This seems counter-ituitive since the numbers are so close until you look at the plot.  You can see that the variance in results in Lot 1 is so small that the population mean of 1498.78 is way to the left of the sample mean.  So looking at it this way, the t test makes sense.  
+The lot 1 t-test against the population calculated mean which is 1498.78 results in a very small p value which is less than .05 which means we would reject the null hypothesis that the Lot 1 sample mean is equal to the population mean.  This seems counter-intuitive since the numbers are so close until you look at the plot.  You can see that the variance in results in Lot 1 is so small that the population mean of 1498.78 is way to the left of the sample mean.  So looking at it this way, the t test makes sense.  
 
 We can also run the Lot 1 test against the assumed population mean of 1500.  In this case, the p value = 1. This means the model with population mean=1500 perfectly describes the data in Lot 1 so we accept the null hypothesis that the Lot 1 sample mean is similar to the assumed population mean of 1500.  
  ![]( https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot11500.PNG)
  
 ### Lot 2 t-test 
 
-An examination of the following plot for Lot 2 density, you can see that the variance is now bigger than that in Lot 1 but it is still normally distributed.
+An examination of the following plot for Lot 2 density, you can see that the variance is now a bit wider than that in Lot 1 but it is still normally distributed.
 
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot2plot.png)
  
@@ -122,22 +122,22 @@ An examination of the following plot for Lot 2 density, you can see that the var
  
 For Lot 2, if we run the t-test against the assumed population mean of 1500, the p value goes way up to .6072.  This means we would accept the null hypothesis that the mean of Lot 2 is the same as 1500.  Interestingly, the mean is very close to this amount so on a practical basis, this statistical test isn't very helpful.  
 
-
-
-
- ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot1500.PNG)
+![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot21500.PNG)
  
 
 
 ### Lot 3 t-test  
 
- For Lot 3, if we run the t-test against a population mean of 1500, the p = .04168.  This is less than our standard of .05 so statiscally we would reject the null hypothesis
+The lot 3 density plot looks very different from the Lot 1 and Lot 2 plots.  The variance is now significantly wider than the other two lots.  
+ 
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3plot.png)
+ 
+ For Lot 3, if we run the t-test against a population mean of 1500, the p = .04168.  This is less than our standard of .05 so statiscally we would reject the null hypothesis
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3ttest.PNG)
   ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot1500.PNG)
 The p values on Lots 1 and 2 are both significantly below our 5% threshold.   A smaller p-value means that there is stronger evidence in favor of the alternative hypothesis. 
 
-These t tests are run against the mean on the whole population which is 1498.78.  So the lot1 and lot2 tests against this value reject the null hypothesis.  This is because the true mean is actually 1500.  So we can run the t test against 1500 as well.  
+These t tests are run against mean on the whole population which is 1498.78.  So the lot1 and lot2 tests against this value reject the null hypothesis.  This is because the true mean is actually 1500.  So we can run the t test against 1500 as well.  
 
 ## Study Design: MechaCar vs Competition
  
