@@ -121,17 +121,20 @@ An examination of the following plot for Lot 2 density, you can see that the var
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot2ttest.PNG)
  
 For Lot 2, if we run the t-test against the assumed population mean of 1500, the p value goes way up to .6072.  This means we would accept the null hypothesis that the mean of Lot 2 is the same as 1500.  Interestingly, the mean is very close to this amount so on a practical basis, this statistical test isn't very helpful.  
+
+
+
+
+ ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot1500.PNG)
  
-  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot1500.PNG)
- 
+
 
 ### Lot 3 t-test  
-
 
  For Lot 3, if we run the t-test against a population mean of 1500, the p = .04168.  This is less than our standard of .05 so statiscally we would reject the null hypothesis
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3plot.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3ttest.PNG)
- 
+  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot1500.PNG)
 The p values on Lots 1 and 2 are both significantly below our 5% threshold.   A smaller p-value means that there is stronger evidence in favor of the alternative hypothesis. 
 
 These t tests are run against the mean on the whole population which is 1498.78.  So the lot1 and lot2 tests against this value reject the null hypothesis.  This is because the true mean is actually 1500.  So we can run the t test against 1500 as well.  
