@@ -103,7 +103,9 @@ Because the company wants to make sure that manufacturing quality is consistent 
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1graph.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1ttest.PNG)
  
- For Lot 1, if run the t-test against a population mean of 1500, the p = 1.  This means the model with mean=1500 perfectly describes the data.  
+The lot 1 t-test against the population calculated mean which is 1498.98 results in a very small p value which is less than .05 which means we would reject the null hypothesis that the Lot 1 sample mean is equal to the population mean.  This seems counter-ituitive since the numbers are so close until you look at the plot.  You can see that the variance in results in Lot 1 is so small that the population mean of 1498.78 is way to the left of the sample mean.  So looking at it this way, the t test makes sense.  
+
+We can also run the Lot 1 test against the assumed population mean of 1500.  In this case, the p value = 1. This means the model with population mean=1500 perfectly describes the data in Lot 1 so we accept the null hypothesis that the Lot 1 sample mean is similar to the assumed population mean of 1500.  
  ![]( https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot11500.PNG)
  
    
