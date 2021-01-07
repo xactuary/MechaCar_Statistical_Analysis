@@ -112,13 +112,17 @@ We can also run the Lot 1 test against the assumed population mean of 1500.  In 
  
 ### Lot 2 t-test 
 
+An examination of the following plot for Lot 2 density, you can see that the variance is now bigger than that in Lot 1 but it is still normally distributed.
 
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot2plot.png)
+ 
+ Running the t-test against the whole population with mean 1498.78 results in a p value that is less than .05 so we would reject the null hypothesis that the sample mean of 1500.2 is similar to the population mean of 1498.78.  
+ 
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot2ttest.PNG)
  
- For Lot 2, if we run the t-test against a population mean of 1500, the p = .6072.  This means we would accept the null hypothesis that the mean of Lot 2 is the same as 1500.  Interestingly, the mean is very close to this amount so on a practical basis, this statistical test isn't very helpful.  
+For Lot 2, if we run the t-test against the assumed population mean of 1500, the p value goes way up to .6072.  This means we would accept the null hypothesis that the mean of Lot 2 is the same as 1500.  Interestingly, the mean is very close to this amount so on a practical basis, this statistical test isn't very helpful.  
  
-  ![]https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot1500.PNG)
+  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot1500.PNG)
  
 
 ### Lot 3 t-test  
