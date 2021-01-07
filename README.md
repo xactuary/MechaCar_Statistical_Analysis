@@ -132,9 +132,19 @@ The lot 3 density plot looks very different from the Lot 1 and Lot 2 plots.  The
  
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3plot.png)
  
+ The results of the t-test running the Lot 3 mean against the population calculated mean if 1498.78 results in a p value above .05.  So in this case, we would accept the null hypothesis that the lot 3 mean is similar to the population mean.  The Lot 3 mean is 1496 which is close to 1498 but no closer than when we ran the Lot 1 and Lot 2 against the population mean.  So why do we accept the null hypothesis for Lot 3 and not for Lot 1 and Lot 2?  This is because of the very wide variance in the Lot 3 results versus the very tight range in the Lot 1 and Lot 2 results.  
+ 
+ Now running the t-test on Lot 3 versus the assumed population mean of 1500 results in a p value less than .05 so we would reject the null hypothesis that the mean of Lot 3 is similar to 1500.  So the results of Lot 3 versus Lot 1 and Lot 2 are the opposite in both tests.  Since Lot 3 did not pass the design specifications with regards to variance, the process for manufacturing on Lot 3 should be reviewed to see why there was so much variance and try to correct it.  
+ 
+  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3ttest.PNG)
+ 
  For Lot 3, if we run the t-test against a population mean of 1500, the p = .04168.  This is less than our standard of .05 so statiscally we would reject the null hypothesis
- ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3ttest.PNG)
+
   ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot1500.PNG)
+  
+  
+### Summary 
+  
 The p values on Lots 1 and 2 are both significantly below our 5% threshold.   A smaller p-value means that there is stronger evidence in favor of the alternative hypothesis. 
 
 These t tests are run against mean on the whole population which is 1498.78.  So the lot1 and lot2 tests against this value reject the null hypothesis.  This is because the true mean is actually 1500.  So we can run the t test against 1500 as well.  
