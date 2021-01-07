@@ -99,6 +99,8 @@ We can also run the sample versus the assumed population mean of 1500 (from chal
 The p value of .1516 is greater than .05 so we accept the null hypothesis that the sample mean is similar to the 1500 assumed total population mean. 
   
 Because the company wants to make sure that manufacturing quality is consistent across lots, it is also important to run the t test on a the 3 different manufacturing lots because we noted earlier that lot 3 did not pass the design specifications.  
+
+### Lot 1 t-test
     
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1graph.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1ttest.PNG)
@@ -108,7 +110,9 @@ The lot 1 t-test against the population calculated mean which is 1498.98 results
 We can also run the Lot 1 test against the assumed population mean of 1500.  In this case, the p value = 1. This means the model with population mean=1500 perfectly describes the data in Lot 1 so we accept the null hypothesis that the Lot 1 sample mean is similar to the assumed population mean of 1500.  
  ![]( https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot11500.PNG)
  
-   
+### Lot 2 t-test 
+
+
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot2plot.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot2ttest.PNG)
  
@@ -116,7 +120,10 @@ We can also run the Lot 1 test against the assumed population mean of 1500.  In 
  
   ![]https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot1500.PNG)
  
- 
+
+### Lot 3 t-test  
+
+
  For Lot 3, if we run the t-test against a population mean of 1500, the p = .04168.  This is less than our standard of .05 so statiscally we would reject the null hypothesis
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3plot.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot3ttest.PNG)
