@@ -44,7 +44,7 @@ So this is consistent with the multiple regression.  For some strange reason, th
 ![](  https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/vehlength.PNG)
 
 
-But the biggest R2 on the individual outcomes only explains 37.15% of the mpg whereas the multiple regression explains 70%.  There is a chance that this example may have the problem of over-modeling.
+The biggest R2 on the individual outcomes only explains 37.15% of the mpg whereas the multiple regression explains 70%.  
   
 ## Summary Statistics on Suspension
 
