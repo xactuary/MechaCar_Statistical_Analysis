@@ -39,12 +39,12 @@ In the summary output, each Pr(>|t|) value represents the probability that each 
 * Variable 4 - ground clearance R2 = .1081, p-value = .01975
 * Variable 5 - AWD R2 = .03007, p-value = .3264
   
-So this is consistent with the multiple regression.  For some strange reason, the only correlation to mpg is from the vehicle length and ground clearance.  We can see from the following graph, that there is a positive slope and correlation between vehicle length and mpg.  As the prototype vehicle gets longer, the mpg gets bigger.
+So this is consistent with the multiple regression.  The R2 is showing that vehicle_length explains 37.15% of the variation and ground clearnce 10.81%.  The other variables are negligent.  We can see from the following graph, that there is a positive slope and correlation between vehicle length and mpg.  As the prototype vehicle gets longer, the mpg gets bigger.
   
 ![](  https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/vehlength.PNG)
 
 
-The biggest R2 on the individual outcomes only explains 37.15% of the mpg whereas the multiple regression explains 70%.  
+The biggest R2 on the individual outcomes only explains 37.15% of the mpg whereas the multiple regression explains 70%.  So the combination of ground clearance and length of car increases the predictive value of the model.  An R2 explaining 70% of the variation is reasonably high but clearly the model is missing some other predictive component that is not included in the data analyzed.  
   
 ## Summary Statistics on Suspension
 
@@ -61,7 +61,7 @@ The biggest R2 on the individual outcomes only explains 37.15% of the mpg wherea
   
 ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/totalsummary.PNG )
   
-For the total, the PSI variance of 62.29 is less than the control maximum of 100. So, as a whole, this data suggests that the manufacturing meets the design specifications.  To further investigate, we look at the statistics divided into manufacturing lots as displayed in the following table:  
+For the total, the PSI variance of 62.29 is less than the control maximum of 100. So, as a whole, this data suggests that the manufacturing meets the design specifications.  To further investigate, however, we look at the statistics divided into manufacturing lots as displayed in the following table:  
 
     
 ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lotsummary.PNG )
@@ -76,7 +76,7 @@ Looking at separate lots, we can see that Lot 3 has a variance that is higher th
   2.  The sample data was selected randomly from its population data.  We use a random sample generator in R to test a sample against the population.
   3.  The input data is considered to be normally distributed - this is usually a reasonable assumption unless we know something else about the data that suggests otherwise. 
   4.  The sample size is reasonably large.  We don't know yet if it is large enough but there are a reasonably large number of observations.
-  5.  The variance of the input data should be very similar.  This is hard to know.
+  5.  The variance of the input data should be very similar.  This is hard to know but we can asssume it is true.
     
 The first run of the t-test is to do a sample of the total population versus the whole population of the suspension_coil dataset.  (note we are not dividing into manufacturing lots yet).  Plotting the distribution of PSI readings for the whole set results in the following density function:
       
@@ -90,24 +90,22 @@ The graphs show basically the same shape and look normally distributed.  The t t
  
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/samplettest.PNG)
  
-  The p value resulting from the t test is .5741 which is above our 5%.  This means that the sample did not occur by chance and the means are similar.   The t value is .5658 which isn't very big which implies there isn't a significant difference between the sample mean and the population mean.  Therefore there is not evidence to reject the null hypothesis that there is no statistical difference between the mean of the sample and population. So we accept the null hypothesis that the means of the sample and the population are similar.   
+  The p value resulting from the t test is .5741 which is above our 5%.  This means that the sample did not occur by chance and the means are similar  The t value is .5658 which isn't very big which implies there isn't a significant difference between the sample mean and the population mean.  Therefore there is not evidence to reject the null hypothesis that there is no statistical difference between the mean of the sample and population. So we accept the null hypothesis that the means of the sample and the population are similar.   (the double negative in this test makes it confusing....)
   
 We can also run the sample versus the assumed population mean of 1500 (from challenge) which results in the following t test results:
 
 ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/sampvs1500ttest.PNG)
 
-The p value of .1516 is greater than .05 so we accept the null hypothesis that the sample mean is similar to the 1500 assumed total population mean. 
+The p value of .1516 is greater than .05 so we accept the null hypothesis that the sample mean is similar to the 1500 assumed total population mean. This is a similar result as when we looked at the variance of the design based on the total population where it looked like the cars passed the variance test as a whole but not for individual lots.  
   
-Because the company wants to make sure that manufacturing quality is consistent across lots, it is also important to run the t test on a the 3 different manufacturing lots because we noted earlier that lot 3 did not pass the design specifications.  
+Because the company wants to make sure that manufacturing quality is consistent across lots, it is also important to run the t test on the 3 different manufacturing lots because we noted earlier that lot 3 did not pass the design specifications.  
 
 ### Lot 1 t-test
     
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1graph.png)
  ![](https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/Lot1ttest.PNG)
  
-The lot 1 t-test against the population calculated mean which is 1498.78 results in a very small p value which is less than .05 which means we would reject the null hypothesis that the Lot 1 sample mean is equal to the population mean.  This seems counter-intuitive since the numbers are so close until you look at the plot.  You can see that the variance in results in Lot 1 is so small that the population mean of 1498.78 is way to the left of the sample mean.  So looking at it this way, the t test makes sense.  
-
-We can also run the Lot 1 test against the assumed population mean of 1500.  In this case, the p value = 1. This means the model with population mean=1500 perfectly describes the data in Lot 1 so we accept the null hypothesis that the Lot 1 sample mean is similar to the assumed population mean of 1500.  
+The lot 1 t-test against the population calculated mean which is 1498.78 results in a very small p value which is less than .05 which means we would reject the null hypothesis that the Lot 1 sample mean is equal to the population mean.  This seems counter-intuitive since the numbers are so close until you look at the plot.  You can see that the variance in results in Lot 1 is so small that the population mean of 1498.78 is way to the left of the sample mean.  So looking at it this way, the t test makes sense rejecting the null hypothesis.  However, if we run the t-test against the assumed pouplation mean of 1500, we get a different result.  In this case, the p value = 1. This means the model with population mean=1500 perfectly describes the data in Lot 1 so we accept the null hypothesis that the Lot 1 sample mean is similar to the assumed population mean of 1500.  
  ![]( https://github.com/xactuary/MechaCar_Statistical_Analysis/blob/main/lot11500.PNG)
  
 ### Lot 2 t-test 
@@ -145,13 +143,11 @@ The lot 3 density plot looks very different from the Lot 1 and Lot 2 plots.  The
   
 ### Summary 
   
-The p values on Lots 1 and 2 are both significantly below our 5% threshold.   A smaller p-value means that there is stronger evidence in favor of the alternative hypothesis. 
-
-These t tests are run against mean on the whole population which is 1498.78.  So the lot1 and lot2 tests against this value reject the null hypothesis.  This is because the true mean is actually 1500.  So we can run the t test against 1500 as well.  
+When we run the t-tests against the population mean of 1498.78 we get the totally opposite result than comparing it to the known population mean of 1500. This is because there is a problem with the Manufacturing Lot 3 that is adding much more variance to the population resulting in a lower mean than the true population mean.  The t test should be used against the known mean of 1500 which would mean we would accept this as the mean for lots 1 and 2 but reject it for lot 3.  We would then recommend a review of the Lot 3 manufacturing process to see what is going on to create the difference.  
 
 ## Study Design: MechaCar vs Competition
  
-Based on the Global Consumer Survey of 2018, the top two factors that drive car purchase for consumers are safety and fuel efficiency.  Other factors that buyers would consider is price, handling, maintenance costs and type of vehicle.  
+Based on the Global Consumer Survey of 2018, the top two factors that drive car purchase for consumers are safety and fuel efficiency.  Other factors that buyers would consider is price, handling, maintenance costs and type of vehicle.  To create a model that compares MechaCar to the competition
 
   
   
